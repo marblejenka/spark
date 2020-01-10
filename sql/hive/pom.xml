@@ -39,6 +39,7 @@
     <dependency>
       <groupId>com.twitter</groupId>
       <artifactId>parquet-hadoop-bundle</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.spark</groupId>
@@ -97,6 +98,7 @@
     <dependency>
       <groupId>${hive.group}</groupId>
       <artifactId>hive-exec</artifactId>
+      <scope>${hive.deps.scope}</scope>
 <!--
       <classifier>core</classifier>
 -->
@@ -104,6 +106,7 @@
     <dependency>
       <groupId>${hive.group}</groupId>
       <artifactId>hive-metastore</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <!--
         <dependency>
@@ -119,62 +122,76 @@
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <!-- use the build matching the hadoop api of avro-mapred (i.e. no classifier for hadoop 1 API,
     hadoop2 classifier for hadoop 2 API. avro-mapred is a dependency of org.spark-project.hive:hive-serde -->
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro-mapred</artifactId>
+      <scope>${hive.deps.scope}</scope>
       <classifier>${avro.mapred.classifier}</classifier>
     </dependency>
     <dependency>
       <groupId>commons-httpclient</groupId>
       <artifactId>commons-httpclient</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.calcite</groupId>
       <artifactId>calcite-avatica</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.calcite</groupId>
       <artifactId>calcite-core</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.codehaus.jackson</groupId>
       <artifactId>jackson-mapper-asl</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <!-- transitive dependencies of hive-exec-core doesn't declare -->
     <dependency>
       <groupId>commons-codec</groupId>
       <artifactId>commons-codec</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.jodd</groupId>
       <artifactId>jodd-core</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>com.google.code.findbugs</groupId>
       <artifactId>jsr305</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.datanucleus</groupId>
       <artifactId>datanucleus-core</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.thrift</groupId>
       <artifactId>libthrift</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.thrift</groupId>
       <artifactId>libfb303</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.derby</groupId>

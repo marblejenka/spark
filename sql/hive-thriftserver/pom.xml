@@ -50,18 +50,38 @@
     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
+      <scope>${hive.deps.scope}</scope>
+    </dependency>
+    <dependency>
+      <groupId>${hive.group}</groupId>
+      <artifactId>hive-exec</artifactId>
+      <scope>${hive.deps.scope}</scope>
+    </dependency>
+    <dependency>
+      <groupId>${hive.group}</groupId>
+      <artifactId>hive-metastore</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>${hive.group}</groupId>
       <artifactId>hive-cli</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>${hive.group}</groupId>
       <artifactId>hive-jdbc</artifactId>
+      <scope>${hive.deps.scope}</scope>
     </dependency>
     <dependency>
       <groupId>${hive.group}</groupId>
       <artifactId>hive-beeline</artifactId>
+      <scope>${hive.deps.scope}</scope>
+    </dependency>
+    <!-- Avoid using jline 2.12, hive dependency  -->
+    <dependency>
+      <groupId>jline</groupId>
+      <artifactId>jline</artifactId>
+      <version>2.14.6</version>
     </dependency>
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
